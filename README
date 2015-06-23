@@ -1,0 +1,32 @@
+
+This software is currently under initial stages of development.
+
+You will need a properly set PostgreSQL database. Scripts for initialization can be found in the 'sql' folder.
+
+Set up connection parameters in tools/database.lisp file.
+
+
+# Load instructions
+
+- Load and install quicklisp
+
+$ sbcl --load bootstrap.lisp
+
+
+Note that it will install quicklisp in .quicklisp
+
+- Now load the program packages
+
+(load "load.lisp")
+
+- And run the main loop
+
+(lgrabber:lgrabber-loop)
+
+
+
+# CLSQL 
+
+gmake must be installed for clsql to load successfully.
+
+
